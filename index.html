@@ -4,61 +4,248 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>цур 2: ликвидация голода</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <style>
         body {
-            font-family: sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
             line-height: 1.6;
         }
 
-        h1, h2 {
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
 
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            background-color: #eee;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
         h2 {
-            margin-top: 40px;
+            color: #4CAF50;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
         }
 
         img {
             display: block;
-            margin: 20px auto;
-            max-width: 100%;
+            margin: 30px auto;
+            max-width: 80%;
             height: auto;
+            border-radius: 5px;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f0f8f1;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            border-radius: 3px;
+        }
+
+        ul li:before {
+            content: "\\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #4CAF50;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .goal-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 50%;
+            background-color: #e5243b; /* Цвет фона для иконки ЦУР 2 */
+        }
+        .goal-icon i{
+            font-size: 50px;
+            color: white;
+        }
+        .icon-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .icon-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .icon-box i {
+            font-size: 40px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .donate-button {
+            display: block;
+            width: 200px;
+            padding: 15px;
+            margin: 30px auto;
+            background-color: #e5243b;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .donate-button:hover {
+            background-color: #c01f32;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>цур 2: ликвидация голода</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">о цели</a></li>
+                <li><a href="#tasks">задачи</a></li>
+                <li><a href="#actions">что мы можем сделать?</a></li>
+                <li><a href="#contacts">контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <h1>цур 2: ликвидация голода, обеспечение продовольственной безопасности и улучшение питания и содействие устойчивому развитию сельского хозяйства</h1>
+        <section id="about">
+            <div class="goal-icon">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <h2>о цели устойчивого развития №2</h2>
+            <p>цель устойчивого развития №2 направлена на ликвидацию голода, обеспечение продовольственной безопасности, улучшение питания и содействие устойчивому развитию сельского хозяйства. эта цель является одной из 17 целей устойчивого развития, принятых оон в 2015 году.</p>
+        </section>
 
-        <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2016/07/E_SDG-goals_icons-individual-rgb-02.png" alt="логотип цур 2">
+        <section id="tasks">
+            <h2>задачи цур 2</h2>
+            <div class="icon-row">
+                <div class="icon-box">
+                    <i class="fas fa-apple-alt"></i>
+                    <p>к 2030 году покончить с голодом и обеспечить доступ к питательной пище.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-baby"></i>
+                    <p>к 2030 году покончить со всеми формами недоедания.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-tractor"></i>
+                    <p>к 2030 году удвоить продуктивность сельского хозяйства.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-seedling"></i>
+                    <p>к 2030 году обеспечить устойчивые системы производства продуктов питания.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-dna"></i>
+                    <p>к 2020 году обеспечить сохранение генетического разнообразия.</p>
+                </div>
+            </div>
+            <p>эти задачи направлены на решение проблемы голода и недоедания во всем мире, а также на создание устойчивых систем производства продуктов питания, которые не наносят вреда окружающей среде.</p>
+        </section>
 
-        <h2>проблема голода в мире</h2>
-        <p>голод остается одной из самых острых проблем современности. по данным оон, в 2022 году около 828 миллионов человек в мире страдали от голода. это каждый десятый житель планеты.</p>
+        <section id="actions">
+            <h2>что мы можем сделать?</h2>
+            <p>каждый из нас может внести свой вклад в достижение цели №2. вот несколько простых шагов:</p>
+            <ul>
+                <li><i class="fas fa-trash"></i> сократить количество пищевых отходов.</li>
+                <li><i class="fas fa-hand-holding-heart"></i> поддерживать местных фермеров и производителей продуктов питания.</li>
+                <li><i class="fas fa-donate"></i> участвовать в благотворительных акциях по сбору продуктов для нуждающихся.</li>
+                <li><i class="fas fa-bullhorn"></i> распространять информацию о проблеме голода и способах ее решения.</li>
+            </ul>
+            <a href="#" class="donate-button">сделать пожертвование</a>
+        </section>
 
-        <h2>задачи цур 2</h2>
-        <ul>
-            <li><b>к 2030 году покончить с голодом</b> и обеспечить всем, особенно малоимущим и уязвимым группам населения, включая младенцев, круглогодичный доступ к безопасной, питательной и достаточной пище.</li>
-            <li><b>к 2030 году покончить со всеми формами недоедания</b>, в том числе добиться к 2025 году реализации согласованных на международном уровне целевых показателей, касающихся борьбы с задержкой роста и истощением у детей в возрасте до пяти лет, и удовлетворять потребности в питании девочек подросткового возраста, беременных и кормящих женщин и пожилых людей.</li>
-            <li><b>к 2030 году удвоить продуктивность сельского хозяйства</b> и доходы мелких производителей продовольствия, в частности женщин, коренных народов, фермерских семейных хозяйств, скотоводов и рыбаков, в том числе посредством обеспечения гарантированного и равного доступа к земельным и другим производственным ресурсам и факторам сельскохозяйственного производства, знаниям, финансовым услугам, рынкам и возможностям для увеличения добавленной стоимости и занятости в несельскохозяйственных секторах.</li>
-            <li><b>к 2030 году обеспечить создание устойчивых систем производства продуктов питания</b> и внедрить методы ведения сельского хозяйства, которые позволяют повысить жизнестойкость и продуктивность, увеличить объемы производства, способствуют сохранению экосистем, повышают способность адаптироваться к изменению климата, экстремальным погодным явлениям, засухам, наводнениям и другим бедствиям и постепенно улучшают качество земель и почв.</li>
-            <li><b>к 2020 году обеспечить сохранение генетического разнообразия</b> семян и культивируемых растений, а также сельскохозяйственных и домашних животных и их соответствующих диких видов, в том числе посредством надлежащего содержания разнообразных банков семян и растений на национальном, региональном и международном уровнях, и содействовать расширению доступа к использованию генетических ресурсов и связанных с ними традиционных знаний на справедливой и равной основе, как это согласовано на международном уровне.</li>
-        </ul>
-
-        <h2>что можем сделать мы?</h2>
-        <p>каждый из нас может внести свой вклад в решение проблемы голода. вот несколько простых шагов:</p>
-        <ul>
-            <li>сократить количество пищевых отходов.</li>
-            <li>поддерживать местных фермеров и производителей продуктов питания.</li>
-            <li>участвовать в благотворительных акциях по сбору продуктов для нуждающихся.</li>
-            <li>распространять информацию о проблеме голода и способах ее решения.</li>
-        </ul>
-        <h2>вместе мы можем покончить с голодом!</h2>
+        <section id="contacts">
+            <h2>контакты</h2>
+            <p>вы можете узнать больше о цели №2 на сайте оон: <a href="https://www.un.org/sustainabledevelopment/ru/hunger/" target="_blank">https://www.un.org/sustainabledevelopment/ru/hunger/</a></p>
+        </section>
     </div>
+
+    <footer>
+        <p>© 2023 | разработано с целью информирования о цур 2. | <a href="#">связаться с нами</a></p>
+    </footer>
+    <script>
+        // Плавный скролл до якорей
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
