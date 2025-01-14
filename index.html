@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>цур 2: ликвидация голода</title>
+    <title>ЦУР 2: Ликвидация голода</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <style>
         body {
@@ -65,6 +65,7 @@
         h2 {
             color: #4CAF50;
             margin-top: 30px;
+            text-align: center;
         }
 
         p {
@@ -118,35 +119,54 @@
         footer a:hover {
             text-decoration: underline;
         }
+
         .goal-icon {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             margin: 20px auto;
             border-radius: 50%;
-            background-color: #e5243b; /* Цвет фона для иконки ЦУР 2 */
+            background-color: #e5243b;
+            transition: transform 0.3s ease-in-out;
         }
-        .goal-icon i{
-            font-size: 50px;
+
+        .goal-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .goal-icon i {
+            font-size: 75px;
             color: white;
         }
+
         .icon-row {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             margin-bottom: 30px;
         }
+
         .icon-box {
             text-align: center;
             margin-bottom: 20px;
+            flex: 0 0 calc(20% - 20px); /* Ширина блока с иконкой */
         }
+
         .icon-box i {
             font-size: 40px;
             color: #4CAF50;
             margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
         }
+        .icon-box:hover i{
+             transform: scale(1.1) rotate(5deg);
+        }
+        .icon-box p {
+            font-size: 14px;
+        }
+
         .donate-button {
             display: block;
             width: 200px;
@@ -160,92 +180,79 @@
             font-size: 1.1em;
             transition: background-color 0.3s;
         }
+
         .donate-button:hover {
             background-color: #c01f32;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>цур 2: ликвидация голода</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">о цели</a></li>
-                <li><a href="#tasks">задачи</a></li>
-                <li><a href="#actions">что мы можем сделать?</a></li>
-                <li><a href="#contacts">контакты</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="container">
-        <section id="about">
-            <div class="goal-icon">
-                <i class="fas fa-utensils"></i>
-            </div>
-            <h2>о цели устойчивого развития №2</h2>
-            <p>цель устойчивого развития №2 направлена на ликвидацию голода, обеспечение продовольственной безопасности, улучшение питания и содействие устойчивому развитию сельского хозяйства. эта цель является одной из 17 целей устойчивого развития, принятых оон в 2015 году.</p>
-        </section>
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-        <section id="tasks">
-            <h2>задачи цур 2</h2>
-            <div class="icon-row">
-                <div class="icon-box">
-                    <i class="fas fa-apple-alt"></i>
-                    <p>к 2030 году покончить с голодом и обеспечить доступ к питательной пище.</p>
-                </div>
-                <div class="icon-box">
-                    <i class="fas fa-baby"></i>
-                    <p>к 2030 году покончить со всеми формами недоедания.</p>
-                </div>
-                <div class="icon-box">
-                    <i class="fas fa-tractor"></i>
-                    <p>к 2030 году удвоить продуктивность сельского хозяйства.</p>
-                </div>
-                <div class="icon-box">
-                    <i class="fas fa-seedling"></i>
-                    <p>к 2030 году обеспечить устойчивые системы производства продуктов питания.</p>
-                </div>
-                <div class="icon-box">
-                    <i class="fas fa-dna"></i>
-                    <p>к 2020 году обеспечить сохранение генетического разнообразия.</p>
-                </div>
-            </div>
-            <p>эти задачи направлены на решение проблемы голода и недоедания во всем мире, а также на создание устойчивых систем производства продуктов питания, которые не наносят вреда окружающей среде.</p>
-        </section>
+        .intro h2 {
+            font-size: 2em;
+            color: #4CAF50;
+        }
 
-        <section id="actions">
-            <h2>что мы можем сделать?</h2>
-            <p>каждый из нас может внести свой вклад в достижение цели №2. вот несколько простых шагов:</p>
-            <ul>
-                <li><i class="fas fa-trash"></i> сократить количество пищевых отходов.</li>
-                <li><i class="fas fa-hand-holding-heart"></i> поддерживать местных фермеров и производителей продуктов питания.</li>
-                <li><i class="fas fa-donate"></i> участвовать в благотворительных акциях по сбору продуктов для нуждающихся.</li>
-                <li><i class="fas fa-bullhorn"></i> распространять информацию о проблеме голода и способах ее решения.</li>
-            </ul>
-            <a href="#" class="donate-button">сделать пожертвование</a>
-        </section>
-
-        <section id="contacts">
-            <h2>контакты</h2>
-            <p>вы можете узнать больше о цели №2 на сайте оон: <a href="https://www.un.org/sustainabledevelopment/ru/hunger/" target="_blank">https://www.un.org/sustainabledevelopment/ru/hunger/</a></p>
-        </section>
-    </div>
-
-    <footer>
-        <p>© 2023 | разработано с целью информирования о цур 2. | <a href="#">связаться с нами</a></p>
-    </footer>
-    <script>
-        // Плавный скролл до якорей
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        .fact {
+            background-color: #f0f8f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .fact h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .fact p{
+            font-size: 1em;
+        }
+        .fact:nth-child(odd) {
+            background-color: #e6f2e7;
+        }
+        .stats{
+           text-align: center;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Соотношение сторон 16:9 */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .team-section {
+            margin-top: 40px;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .team-member h4 {
+            margin-bottom: 5px;
+        }
+        .team-member p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .parallax {
+            background-image: url('https://www.unicef.org/ukraine/sites/unicef.org.ukraine/files/styles/hero_desktop/public/2020_UN0315291.
